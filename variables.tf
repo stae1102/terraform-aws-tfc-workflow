@@ -38,11 +38,11 @@ variable "placeholder" {
 }
 
 variable "ec2_count" {
-  default = 1
+  default     = 1
   description = "The Number of EC2 Instance"
 
   validation {
-    condition = var.ec2_count > 0
+    condition     = var.ec2_count > 0
     error_message = "The ec2_count should be greater than 0"
   }
 }
